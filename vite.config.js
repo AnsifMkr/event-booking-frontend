@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http:////127.0.0.1:8000', // Django backend
+        target: 'https://event-booking-backend-rsnj.onrender.com', // Django backend hosted on Render
         changeOrigin: true,
       }
     }
