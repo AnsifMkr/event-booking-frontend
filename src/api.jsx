@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://127.0.0.1:8000', // Django backend
+  baseURL: 'https://event-booking-backend-rsnj.onrender.com', // Django backend hosted on Render
 });
 
 API.interceptors.request.use((config) => {
