@@ -45,12 +45,18 @@ npm run dev
 App will be running on http://localhost:5173
 
 
+---
+
 ### 🔐 Authentication
 - *Login credentials are stored via JWT in localStorage.*
 - *Auth header is automatically included using Axios instance.*
 ```js
 Authorization: Bearer <access_token>
 ```
+
+---
+
+
 ### Backend API Connection
 Make sure to set the correct API base URL inside src/api.js:
 
@@ -65,13 +71,23 @@ export default API;
 ```
 
 
+---
+
+
 ### 🖌️ UI Highlights
 - 📱 Responsive design with Tailwind
 - ✨ Smooth hover effects and transitions
 - 🗂️ Clean card layout for events
 
+
+---
+
+
 ### 📄 License
 This project is licensed under the MIT License.
+
+
+---
 
 ### ✨ Author
 Developed by Ansif
