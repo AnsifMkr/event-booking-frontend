@@ -1,12 +1,77 @@
-# React + Vite
+# 🎫 Event Booking Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **frontend** of the Event Booking web application, built using **React.js** and **Tailwind CSS**. It allows users to browse events, book tickets, and view their bookings, while admins can add and manage events.
 
-Currently, two official plugins are available:
+> 🔗 Paired with: [Event Booking Backend](https://github.com/AnsifMkr/event-booking-backend)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌟 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 👤 User Login & JWT Authentication
+- 🗓️ Browse All Events
+- 📥 Book Events (with available seat count check)
+- 📋 My Bookings Page
+- 🛠️ Admin Panel: Add New Event with Image, Time & Date
+
+---
+
+## 🛠️ Tech Stack
+
+- **React.js** (Vite/CRA)
+- **Tailwind CSS**
+- **Axios** (for API calls)
+- **JWT** Auth (with localStorage)
+- **React Router**
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/AnsifMkr/event-booking-frontend.git
+cd event-booking-frontend
+```
+### 2.Install dependencies
+```bash
+npm install
+```
+### 3.Start the development server
+```bash
+npm run dev
+```
+App will be running on http://localhost:5173
+
+
+### 🔐 Authentication
+- *Login credentials are stored via JWT in localStorage.*
+- *Auth header is automatically included using Axios instance.*
+```js
+Authorization: Bearer <access_token>
+```
+### Backend API Connection
+Make sure to set the correct API base URL inside src/api.js:
+
+```js
+import axios from 'axios';
+
+const API = axios.create({
+  baseURL: 'http://127.0.0.1:8000/', // or your deployed backend URL
+});
+
+export default API;
+```
+
+
+### 🖌️ UI Highlights
+- 📱 Responsive design with Tailwind
+- ✨ Smooth hover effects and transitions
+- 🗂️ Clean card layout for events
+
+### 📄 License
+This project is licensed under the MIT License.
+
+### ✨ Author
+Developed by Ansif
